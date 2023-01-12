@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(204, 43%, 93%);
+}
+
+main {
+	width: 65%;
+}
+
+.container-top {
+	background: white;
+	padding: 4rem 2rem 3rem 4rem;
+	border-radius: 1rem 1rem 0 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	color: hsl(179, 62%, 43%);
+	padding: 0 0 1rem 0;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.container-top h2 {
+	padding: 0.5rem 0 1rem 0;
+	color: hsl(61, 73%, 54%);
+}
+
+.container-top p {
+	color: hsl(218, 22%, 67%);
+	padding: 0 8rem 0 0;
+	font-size: 17px;
+	line-height: 1.5rem;
+}
+
+.container-bottom {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	background: hsl(179, 62%, 43%);
+	border-radius: 0 0 1rem 1rem;
+	color: white;
+}
+
+.subscription {
+	width: 50%;
+	padding: 1rem 4rem 2rem 4rem;
+	border-radius: 0 0 0 1rem;
+	background: hsl(179, 52%, 43%);
+}
+
+.subscription h2 {
+	padding: 1rem 0 1rem 0;
+}
+
+h3 {
+	font-size: 2.5em;
+	display: inline-block;
+	margin: 0 0.5rem 0 0;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+}
+
+span {
+	opacity: 0.8;
+}
+
+.subscription p {
+	margin: 0.5rem 0 1rem 0;
+	font-size: 1.3em;
+}
+
+button {
+	width: 100%;
+	margin: 1rem 1rem 0 0;
+	padding: 1rem 0 1rem 0;
+	border-radius: 0.5rem;
+	font-size: 1.2em;
+	border-style: none;
+	background: hsl(71, 73%, 54%);
+	color: white;
+	font-weight: bold;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.about {
+	width: 50%;
+	padding: 0 0 0 3rem;
+}
+
+.about p {
+	font-size: 15px;
+	padding: 1.3rem 2rem 0 0;
+	line-height: 1.3rem;
+	opacity: 0.8;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: auto;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 95vw;
+		margin: 1rem 0 2rem 0;	
+	}
+
+	.container-top {
+		padding: 2rem 1rem 1rem 1rem;
+		text-align: left;
+		margin: 2rem 0 0 0;
+	}
+
+	h1, h2, .container-top p {
+		padding: 0;
+		margin: 0;
+		font-size: 1.3em;
+	}
+
+	.container-top p {
+		line-height: 1rem;
+	}
+
+	.container-bottom {
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+
+	}
+
+	.subscription, .about {
+		width: 100%;
+		padding: 1rem 1rem 2rem 1rem ;
+	}
+
+	.subscription {
+		border-radius: 0;
+	}
+	footer {
+		position: relative
+	}
+}
