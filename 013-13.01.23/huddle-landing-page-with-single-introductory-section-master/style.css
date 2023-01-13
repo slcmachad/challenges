@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/*		font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;		*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-image: url(images/bg-desktop.svg);
+	background-color: hsl(257, 40%, 49%);
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	/*overflow: hidden;*/
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	padding: 2rem 1rem 1rem 1rem;
+}
+
+.logo {
+	align-self: flex-start;
+	margin: 0 0 3rem -3rem;
+	scale: 0.6;
+}
+
+.text-box {
+	padding: 3rem 0 0 1rem;
+	margin-left: 2rem;
+}
+
+.info {
+	display: inline-flex;
+}
+
+.info h1 {
+	padding: 0 4rem 1rem 0;
+}
+
+.info p {
+	padding: 1rem 4.5rem 1rem 0;
+	font-size: 1em;
+}
+
+button {
+	width: 30%;
+	padding: 0.6rem 1.8rem;
+	border-radius: 1.5rem;
+	border-style: none;
+	color:hsl(300, 69%, 71%);
+}
+
+.socialmedia {
+	align-self: flex-end;
+	scale: 1.5;
+	margin-right: 10rem;
+}
+
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+  background: #3B5998;
+  color: white;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+}
+
+.fa {
+  padding: 5px 0 0 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+.cor-branco {
+	outline-color: white;
+	color: white;
+}		
+
+@media screen and (max-width: 375px) {
+	
+	.info {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}	
+
+	.info h1, .info p, .text-box {
+		padding: 0 0 1rem 0;
+		margin: 0;
+	}
+
+	button {
+		width: 70%;
+		padding: 0.6rem 1.8rem;
+	}
+
+
+	.text-box {
+		text-align: center;
+	}
+
+	.socialmedia {
+		align-self: center;
+		scale: 1.5;
+		margin-right: 0;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0;
+	}
+	.attribution a {
+		color: white;
+	}
+
+}	
+
